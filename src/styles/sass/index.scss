@@ -1,17 +1,16 @@
+/*************************
+          Helpers
+**************************/
+@import 'helpers/mixins';
+@import 'helpers/variables';
 
 /*************************
           Base
 **************************/
-@import './base/normalize';
-@import './base/base';
-
-/*************************
-          Helpers
-**************************/
-@import './helpers/mixins';
-@import './helpers/variables';
+@import 'base/normalize';
+@import 'base/base';
 
 /*************************
          Partials
 **************************/
-@import './partials/navbar';
+@import 'partials/navbar';

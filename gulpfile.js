@@ -11,7 +11,7 @@ const uglify = require('gulp-uglify');
 // Styles
 gulp.task('styles', function () {
   return gulp.src(['src/styles/sass/*.scss'])
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false,
