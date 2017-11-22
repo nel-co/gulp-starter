@@ -52,11 +52,12 @@ gulp.task('watch', function () {
   // Static server
   browserSync.init({
     server: {
-      baseDir: './',
+      baseDir: 'build/',
     },
+    browser: 'chrome'
   });
   // Watch .html files
-  gulp.watch('*.html', ['html']);
+  gulp.watch('build/*.html', ['html']);
   // Watch .scss files
   gulp.watch('src/styles/**/*.scss', ['styles']);
   // Watch .js files
